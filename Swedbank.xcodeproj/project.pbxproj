@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0443AF6820F33F48005C98DE /* CoreDataStackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443AF6720F33F48005C98DE /* CoreDataStackProtocol.swift */; };
+		0443AF6A20F3517C005C98DE /* UIRefreshControl+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443AF6920F3517C005C98DE /* UIRefreshControl+Additions.swift */; };
+		0443AF7120F380DC005C98DE /* TypeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443AF7020F380DC005C98DE /* TypeLocation.swift */; };
+		0443AF7320F398A5005C98DE /* LocationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443AF7220F398A5005C98DE /* LocationInfoViewModel.swift */; };
+		0443AF7720F3A075005C98DE /* RegionsRequestFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443AF7620F3A075005C98DE /* RegionsRequestFactoryProtocol.swift */; };
+		0443AF7B20F3AD02005C98DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0443AF7A20F3AD02005C98DE /* LaunchScreen.storyboard */; };
+		04F2936820F0B88400666853 /* RegionsNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2936720F0B88400666853 /* RegionsNetworkManagerProtocol.swift */; };
+		04F2936A20F0BB4900666853 /* RegionsStoreManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2936920F0BB4900666853 /* RegionsStoreManagerProtocol.swift */; };
+		04F2936D20F0CAEB00666853 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2936C20F0CAEB00666853 /* Country.swift */; };
+		04F2936F20F0CB6C00666853 /* BankRegion+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2936E20F0CB6C00666853 /* BankRegion+Additions.swift */; };
+		04F2937720F0D26C00666853 /* RegionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2937620F0D26C00666853 /* RegionsRouter.swift */; };
+		04F2937920F0D2C200666853 /* RegionsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2937820F0D2C200666853 /* RegionsRouterProtocol.swift */; };
+		04F2937D20F0D44700666853 /* Locations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F2937C20F0D44700666853 /* Locations.storyboard */; };
+		04F2938220F0D4CA00666853 /* LocationsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2938120F0D4CA00666853 /* LocationsAssembly.swift */; };
+		04F2938420F0D52900666853 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2938320F0D52900666853 /* LocationsTableViewController.swift */; };
+		04F2938720F0D8D700666853 /* LocationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2938620F0D8D700666853 /* LocationsPresenter.swift */; };
+		04F2938920F0D8F700666853 /* LocationsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2938820F0D8F700666853 /* LocationsPresenterProtocol.swift */; };
+		04F2938B20F0D96400666853 /* LocationsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2938A20F0D96400666853 /* LocationsViewControllerProtocol.swift */; };
+		04F2939320F0EC8600666853 /* LocationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2939220F0EC8600666853 /* LocationsRouter.swift */; };
+		04F2939520F0ECD900666853 /* LocationsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2939420F0ECD900666853 /* LocationsRouterProtocol.swift */; };
+		04F2939720F0EE6200666853 /* DefaultRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2939620F0EE6200666853 /* DefaultRouterProtocol.swift */; };
+		04F2939B20F0EFF100666853 /* LocationInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F2939A20F0EFF100666853 /* LocationInfo.storyboard */; };
+		04F2939D20F0F04500666853 /* LocationInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2939C20F0F04500666853 /* LocationInfoTableViewController.swift */; };
+		04F293A020F0F06C00666853 /* LocationInfoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2939F20F0F06C00666853 /* LocationInfoAssembly.swift */; };
+		04F293A320F0F12D00666853 /* LocationInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F293A220F0F12D00666853 /* LocationInfoPresenter.swift */; };
+		04F293A520F0F16000666853 /* LocationInfoPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F293A420F0F16000666853 /* LocationInfoPresenterProtocol.swift */; };
+		04F293A720F0F1C200666853 /* LocationInfoTableViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F293A620F0F1C200666853 /* LocationInfoTableViewControllerProtocol.swift */; };
+		04F293AD20F1066A00666853 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F293AC20F1066A00666853 /* UIViewController+Additions.swift */; };
+		04F89AF420EF6E9400661E8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89AF320EF6E9400661E8E /* AppDelegate.swift */; };
+		04F89AFC20EF6E9500661E8E /* Swedbank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F89AFA20EF6E9500661E8E /* Swedbank.xcdatamodeld */; };
+		04F89AFE20EF6E9800661E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F89AFD20EF6E9800661E8E /* Assets.xcassets */; };
+		04F89B0920EF6F2100661E8E /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B0820EF6F2100661E8E /* ApplicationRouter.swift */; };
+		04F89B1020EF702D00661E8E /* RegionsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B0F20EF702D00661E8E /* RegionsAssembly.swift */; };
+		04F89B1320EF716E00661E8E /* RegionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B1220EF716E00661E8E /* RegionsPresenter.swift */; };
+		04F89B1720EF723E00661E8E /* RegionsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B1620EF723E00661E8E /* RegionsNetworkManager.swift */; };
+		04F89B1B20EF7F3100661E8E /* URLSession+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B1A20EF7F3100661E8E /* URLSession+Additions.swift */; };
+		04F89B1D20EF80B800661E8E /* RegionsRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B1C20EF80B800661E8E /* RegionsRequestFactory.swift */; };
+		04F89B2020EF864700661E8E /* BankLocationJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B1F20EF864700661E8E /* BankLocationJSON.swift */; };
+		04F89B2520EF9EA700661E8E /* TaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B2420EF9EA700661E8E /* TaskResult.swift */; };
+		04F89B2720EFA5B600661E8E /* Regions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F89B2620EFA5B600661E8E /* Regions.storyboard */; };
+		04F89B2920EFA5E200661E8E /* RegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B2820EFA5E200661E8E /* RegionsTableViewController.swift */; };
+		04F89B2B20EFA88600661E8E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B2A20EFA88600661E8E /* CoreDataStack.swift */; };
+		04F89B2E20EFAAF900661E8E /* BankLocation+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B2D20EFAAF900661E8E /* BankLocation+Additions.swift */; };
+		04F89B3120EFB7F300661E8E /* RegionsStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B3020EFB7F300661E8E /* RegionsStoreManager.swift */; };
+		04F89B3320F0B2FB00661E8E /* RegionsViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B3220F0B2FB00661E8E /* RegionsViewControllerProtocol.swift */; };
+		04F89B3520F0B35900661E8E /* RegionsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89B3420F0B35900661E8E /* RegionsPresenterProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0443AF6720F33F48005C98DE /* CoreDataStackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackProtocol.swift; sourceTree = "<group>"; };
+		0443AF6920F3517C005C98DE /* UIRefreshControl+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Additions.swift"; sourceTree = "<group>"; };
+		0443AF7020F380DC005C98DE /* TypeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeLocation.swift; sourceTree = "<group>"; };
+		0443AF7220F398A5005C98DE /* LocationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewModel.swift; sourceTree = "<group>"; };
+		0443AF7620F3A075005C98DE /* RegionsRequestFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsRequestFactoryProtocol.swift; sourceTree = "<group>"; };
+		0443AF7A20F3AD02005C98DE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F2936720F0B88400666853 /* RegionsNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsNetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		04F2936920F0BB4900666853 /* RegionsStoreManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsStoreManagerProtocol.swift; sourceTree = "<group>"; };
+		04F2936C20F0CAEB00666853 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		04F2936E20F0CB6C00666853 /* BankRegion+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BankRegion+Additions.swift"; sourceTree = "<group>"; };
+		04F2937620F0D26C00666853 /* RegionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsRouter.swift; sourceTree = "<group>"; };
+		04F2937820F0D2C200666853 /* RegionsRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsRouterProtocol.swift; sourceTree = "<group>"; };
+		04F2937C20F0D44700666853 /* Locations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Locations.storyboard; sourceTree = "<group>"; };
+		04F2938120F0D4CA00666853 /* LocationsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsAssembly.swift; sourceTree = "<group>"; };
+		04F2938320F0D52900666853 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
+		04F2938620F0D8D700666853 /* LocationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenter.swift; sourceTree = "<group>"; };
+		04F2938820F0D8F700666853 /* LocationsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenterProtocol.swift; sourceTree = "<group>"; };
+		04F2938A20F0D96400666853 /* LocationsViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewControllerProtocol.swift; sourceTree = "<group>"; };
+		04F2939220F0EC8600666853 /* LocationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRouter.swift; sourceTree = "<group>"; };
+		04F2939420F0ECD900666853 /* LocationsRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRouterProtocol.swift; sourceTree = "<group>"; };
+		04F2939620F0EE6200666853 /* DefaultRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouterProtocol.swift; sourceTree = "<group>"; };
+		04F2939A20F0EFF100666853 /* LocationInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationInfo.storyboard; sourceTree = "<group>"; };
+		04F2939C20F0F04500666853 /* LocationInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoTableViewController.swift; sourceTree = "<group>"; };
+		04F2939F20F0F06C00666853 /* LocationInfoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoAssembly.swift; sourceTree = "<group>"; };
+		04F293A220F0F12D00666853 /* LocationInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoPresenter.swift; sourceTree = "<group>"; };
+		04F293A420F0F16000666853 /* LocationInfoPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoPresenterProtocol.swift; sourceTree = "<group>"; };
+		04F293A620F0F1C200666853 /* LocationInfoTableViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoTableViewControllerProtocol.swift; sourceTree = "<group>"; };
+		04F293AC20F1066A00666853 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		04F89AF020EF6E9400661E8E /* Swedbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swedbank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F89AF320EF6E9400661E8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04F89AFB20EF6E9500661E8E /* TSB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TSB.xcdatamodel; sourceTree = "<group>"; };
+		04F89AFD20EF6E9800661E8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F89B0220EF6E9800661E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F89B0820EF6F2100661E8E /* ApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
+		04F89B0F20EF702D00661E8E /* RegionsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsAssembly.swift; sourceTree = "<group>"; };
+		04F89B1220EF716E00661E8E /* RegionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsPresenter.swift; sourceTree = "<group>"; };
+		04F89B1620EF723E00661E8E /* RegionsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsNetworkManager.swift; sourceTree = "<group>"; };
+		04F89B1A20EF7F3100661E8E /* URLSession+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Additions.swift"; sourceTree = "<group>"; };
+		04F89B1C20EF80B800661E8E /* RegionsRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsRequestFactory.swift; sourceTree = "<group>"; };
+		04F89B1F20EF864700661E8E /* BankLocationJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankLocationJSON.swift; sourceTree = "<group>"; };
+		04F89B2420EF9EA700661E8E /* TaskResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskResult.swift; sourceTree = "<group>"; };
+		04F89B2620EFA5B600661E8E /* Regions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Regions.storyboard; sourceTree = "<group>"; };
+		04F89B2820EFA5E200661E8E /* RegionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsTableViewController.swift; sourceTree = "<group>"; };
+		04F89B2A20EFA88600661E8E /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		04F89B2D20EFAAF900661E8E /* BankLocation+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BankLocation+Additions.swift"; sourceTree = "<group>"; };
+		04F89B3020EFB7F300661E8E /* RegionsStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsStoreManager.swift; sourceTree = "<group>"; };
+		04F89B3220F0B2FB00661E8E /* RegionsViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsViewControllerProtocol.swift; sourceTree = "<group>"; };
+		04F89B3420F0B35900661E8E /* RegionsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsPresenterProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F89AED20EF6E9400661E8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0443AF6B20F353DE005C98DE /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				04F89B2A20EFA88600661E8E /* CoreDataStack.swift */,
+				0443AF6720F33F48005C98DE /* CoreDataStackProtocol.swift */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		0443AF6E20F36C61005C98DE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				04F2936E20F0CB6C00666853 /* BankRegion+Additions.swift */,
+				04F89B2D20EFAAF900661E8E /* BankLocation+Additions.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0443AF6F20F380CB005C98DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0443AF7220F398A5005C98DE /* LocationInfoViewModel.swift */,
+				0443AF7020F380DC005C98DE /* TypeLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0443AF7420F39DD2005C98DE /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				04F89AFA20EF6E9500661E8E /* Swedbank.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		0443AF7520F3A062005C98DE /* RequestFactory */ = {
+			isa = PBXGroup;
+			children = (
+				04F89B1C20EF80B800661E8E /* RegionsRequestFactory.swift */,
+				0443AF7620F3A075005C98DE /* RegionsRequestFactoryProtocol.swift */,
+			);
+			path = RequestFactory;
+			sourceTree = "<group>";
+		};
+		0443AF7820F3AC1C005C98DE /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				04F89AFD20EF6E9800661E8E /* Assets.xcassets */,
+				0443AF7A20F3AD02005C98DE /* LaunchScreen.storyboard */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		0443AF7920F3AC8E005C98DE /* System */ = {
+			isa = PBXGroup;
+			children = (
+				04F89AF320EF6E9400661E8E /* AppDelegate.swift */,
+				04F89B0820EF6F2100661E8E /* ApplicationRouter.swift */,
+				04F89B0220EF6E9800661E8E /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		0443AF7C20F3B685005C98DE /* RequestService */ = {
+			isa = PBXGroup;
+			children = (
+				04F89B1620EF723E00661E8E /* RegionsNetworkManager.swift */,
+				04F2936720F0B88400666853 /* RegionsNetworkManagerProtocol.swift */,
+			);
+			path = RequestService;
+			sourceTree = "<group>";
+		};
+		04F2936B20F0BFDF00666853 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				04F2937620F0D26C00666853 /* RegionsRouter.swift */,
+				04F2937820F0D2C200666853 /* RegionsRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		04F2937A20F0D3EC00666853 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				04F2938020F0D4B600666853 /* Assembly */,
+				04F2939120F0EC7400666853 /* Router */,
+				04F2938520F0D8C600666853 /* Presenter */,
+				04F2937B20F0D43300666853 /* ViewController */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		04F2937B20F0D43300666853 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04F2937C20F0D44700666853 /* Locations.storyboard */,
+				04F2938320F0D52900666853 /* LocationsTableViewController.swift */,
+				04F2938A20F0D96400666853 /* LocationsViewControllerProtocol.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04F2938020F0D4B600666853 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				04F2938120F0D4CA00666853 /* LocationsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		04F2938520F0D8C600666853 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04F2938620F0D8D700666853 /* LocationsPresenter.swift */,
+				04F2938820F0D8F700666853 /* LocationsPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04F2939120F0EC7400666853 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				04F2939220F0EC8600666853 /* LocationsRouter.swift */,
+				04F2939420F0ECD900666853 /* LocationsRouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		04F2939820F0EFC300666853 /* LocationInfo */ = {
+			isa = PBXGroup;
+			children = (
+				04F2939E20F0F05200666853 /* Assembly */,
+				0443AF6F20F380CB005C98DE /* Models */,
+				04F293A120F0F11900666853 /* Presenter */,
+				04F2939920F0EFDD00666853 /* ViewController */,
+			);
+			path = LocationInfo;
+			sourceTree = "<group>";
+		};
+		04F2939920F0EFDD00666853 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04F2939A20F0EFF100666853 /* LocationInfo.storyboard */,
+				04F2939C20F0F04500666853 /* LocationInfoTableViewController.swift */,
+				04F293A620F0F1C200666853 /* LocationInfoTableViewControllerProtocol.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04F2939E20F0F05200666853 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				04F2939F20F0F06C00666853 /* LocationInfoAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		04F293A120F0F11900666853 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04F293A220F0F12D00666853 /* LocationInfoPresenter.swift */,
+				04F293A420F0F16000666853 /* LocationInfoPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04F293A920F1062900666853 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				04F2939620F0EE6200666853 /* DefaultRouterProtocol.swift */,
+				0443AF6920F3517C005C98DE /* UIRefreshControl+Additions.swift */,
+				04F293AC20F1066A00666853 /* UIViewController+Additions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		04F293AA20F1063200666853 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				04F89B2420EF9EA700661E8E /* TaskResult.swift */,
+				04F89B1A20EF7F3100661E8E /* URLSession+Additions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		04F89AE720EF6E9400661E8E = {
+			isa = PBXGroup;
+			children = (
+				04F89AF220EF6E9400661E8E /* Swedbank */,
+				04F89AF120EF6E9400661E8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F89AF120EF6E9400661E8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F89AF020EF6E9400661E8E /* Swedbank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F89AF220EF6E9400661E8E /* Swedbank */ = {
+			isa = PBXGroup;
+			children = (
+				0443AF7920F3AC8E005C98DE /* System */,
+				04F89B2320EF9E9400661E8E /* Common */,
+				04F89B2C20EFAAE400661E8E /* CoreData */,
+				0443AF7820F3AC1C005C98DE /* Resourses */,
+				04F89B0A20EF6FD300661E8E /* Regions */,
+				04F2937A20F0D3EC00666853 /* Locations */,
+				04F2939820F0EFC300666853 /* LocationInfo */,
+			);
+			path = Swedbank;
+			sourceTree = "<group>";
+		};
+		04F89B0A20EF6FD300661E8E /* Regions */ = {
+			isa = PBXGroup;
+			children = (
+				04F89B0E20EF700E00661E8E /* Assembly */,
+				04F89B1E20EF863B00661E8E /* Models */,
+				04F2936B20F0BFDF00666853 /* Router */,
+				04F89B2F20EFB7DD00661E8E /* StoreManager */,
+				04F89B1420EF721300661E8E /* NetworkManager */,
+				04F89B1120EF712000661E8E /* Presenter */,
+				04F89B0D20EF6FFA00661E8E /* ViewController */,
+			);
+			path = Regions;
+			sourceTree = "<group>";
+		};
+		04F89B0D20EF6FFA00661E8E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04F89B2620EFA5B600661E8E /* Regions.storyboard */,
+				04F89B2820EFA5E200661E8E /* RegionsTableViewController.swift */,
+				04F89B3220F0B2FB00661E8E /* RegionsViewControllerProtocol.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04F89B0E20EF700E00661E8E /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				04F89B0F20EF702D00661E8E /* RegionsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		04F89B1120EF712000661E8E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04F89B1220EF716E00661E8E /* RegionsPresenter.swift */,
+				04F89B3420F0B35900661E8E /* RegionsPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04F89B1420EF721300661E8E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				0443AF7520F3A062005C98DE /* RequestFactory */,
+				0443AF7C20F3B685005C98DE /* RequestService */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		04F89B1E20EF863B00661E8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04F2936C20F0CAEB00666853 /* Country.swift */,
+				04F89B1F20EF864700661E8E /* BankLocationJSON.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04F89B2320EF9E9400661E8E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04F293AA20F1063200666853 /* Foundation */,
+				04F293A920F1062900666853 /* UIKit */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		04F89B2C20EFAAE400661E8E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0443AF6B20F353DE005C98DE /* CoreDataStack */,
+				0443AF6E20F36C61005C98DE /* Entities */,
+				0443AF7420F39DD2005C98DE /* Storage */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		04F89B2F20EFB7DD00661E8E /* StoreManager */ = {
+			isa = PBXGroup;
+			children = (
+				04F89B3020EFB7F300661E8E /* RegionsStoreManager.swift */,
+				04F2936920F0BB4900666853 /* RegionsStoreManagerProtocol.swift */,
+			);
+			path = StoreManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F89AEF20EF6E9400661E8E /* Swedbank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F89B0520EF6E9800661E8E /* Build configuration list for PBXNativeTarget "Swedbank" */;
+			buildPhases = (
+				04F89AEC20EF6E9400661E8E /* Sources */,
+				04F89AED20EF6E9400661E8E /* Frameworks */,
+				04F89AEE20EF6E9400661E8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swedbank;
+			productName = TSB;
+			productReference = 04F89AF020EF6E9400661E8E /* Swedbank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F89AE820EF6E9400661E8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Antony Karpov";
+				TargetAttributes = {
+					04F89AEF20EF6E9400661E8E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 04F89AEB20EF6E9400661E8E /* Build configuration list for PBXProject "Swedbank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F89AE720EF6E9400661E8E;
+			productRefGroup = 04F89AF120EF6E9400661E8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F89AEF20EF6E9400661E8E /* Swedbank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F89AEE20EF6E9400661E8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F2939B20F0EFF100666853 /* LocationInfo.storyboard in Resources */,
+				04F89B2720EFA5B600661E8E /* Regions.storyboard in Resources */,
+				04F89AFE20EF6E9800661E8E /* Assets.xcassets in Resources */,
+				04F2937D20F0D44700666853 /* Locations.storyboard in Resources */,
+				0443AF7B20F3AD02005C98DE /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F89AEC20EF6E9400661E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F89AFC20EF6E9500661E8E /* Swedbank.xcdatamodeld in Sources */,
+				04F89B2E20EFAAF900661E8E /* BankLocation+Additions.swift in Sources */,
+				04F89B3120EFB7F300661E8E /* RegionsStoreManager.swift in Sources */,
+				04F89B1320EF716E00661E8E /* RegionsPresenter.swift in Sources */,
+				04F89B2520EF9EA700661E8E /* TaskResult.swift in Sources */,
+				04F2939520F0ECD900666853 /* LocationsRouterProtocol.swift in Sources */,
+				04F2936A20F0BB4900666853 /* RegionsStoreManagerProtocol.swift in Sources */,
+				04F2938220F0D4CA00666853 /* LocationsAssembly.swift in Sources */,
+				04F2938B20F0D96400666853 /* LocationsViewControllerProtocol.swift in Sources */,
+				04F2937920F0D2C200666853 /* RegionsRouterProtocol.swift in Sources */,
+				04F89B3320F0B2FB00661E8E /* RegionsViewControllerProtocol.swift in Sources */,
+				04F2939D20F0F04500666853 /* LocationInfoTableViewController.swift in Sources */,
+				0443AF7320F398A5005C98DE /* LocationInfoViewModel.swift in Sources */,
+				04F2939320F0EC8600666853 /* LocationsRouter.swift in Sources */,
+				04F2938720F0D8D700666853 /* LocationsPresenter.swift in Sources */,
+				04F2939720F0EE6200666853 /* DefaultRouterProtocol.swift in Sources */,
+				04F2936D20F0CAEB00666853 /* Country.swift in Sources */,
+				0443AF7120F380DC005C98DE /* TypeLocation.swift in Sources */,
+				04F2938420F0D52900666853 /* LocationsTableViewController.swift in Sources */,
+				04F89B2020EF864700661E8E /* BankLocationJSON.swift in Sources */,
+				0443AF6A20F3517C005C98DE /* UIRefreshControl+Additions.swift in Sources */,
+				04F89AF420EF6E9400661E8E /* AppDelegate.swift in Sources */,
+				04F89B0920EF6F2100661E8E /* ApplicationRouter.swift in Sources */,
+				04F89B2B20EFA88600661E8E /* CoreDataStack.swift in Sources */,
+				04F293A020F0F06C00666853 /* LocationInfoAssembly.swift in Sources */,
+				04F89B1720EF723E00661E8E /* RegionsNetworkManager.swift in Sources */,
+				04F293A720F0F1C200666853 /* LocationInfoTableViewControllerProtocol.swift in Sources */,
+				0443AF7720F3A075005C98DE /* RegionsRequestFactoryProtocol.swift in Sources */,
+				04F2937720F0D26C00666853 /* RegionsRouter.swift in Sources */,
+				04F293A520F0F16000666853 /* LocationInfoPresenterProtocol.swift in Sources */,
+				04F2938920F0D8F700666853 /* LocationsPresenterProtocol.swift in Sources */,
+				04F89B3520F0B35900661E8E /* RegionsPresenterProtocol.swift in Sources */,
+				04F89B1D20EF80B800661E8E /* RegionsRequestFactory.swift in Sources */,
+				04F293A320F0F12D00666853 /* LocationInfoPresenter.swift in Sources */,
+				04F2936820F0B88400666853 /* RegionsNetworkManagerProtocol.swift in Sources */,
+				04F89B1B20EF7F3100661E8E /* URLSession+Additions.swift in Sources */,
+				0443AF6820F33F48005C98DE /* CoreDataStackProtocol.swift in Sources */,
+				04F293AD20F1066A00666853 /* UIViewController+Additions.swift in Sources */,
+				04F89B1020EF702D00661E8E /* RegionsAssembly.swift in Sources */,
+				04F89B2920EFA5E200661E8E /* RegionsTableViewController.swift in Sources */,
+				04F2936F20F0CB6C00666853 /* BankRegion+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04F89B0320EF6E9800661E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F89B0420EF6E9800661E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F89B0620EF6E9800661E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HT9L47FFUL;
+				INFOPLIST_FILE = "$(SRCROOT)/Swedbank/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Antony-Karpov.Swedbank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04F89B0720EF6E9800661E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HT9L47FFUL;
+				INFOPLIST_FILE = "$(SRCROOT)/Swedbank/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Antony-Karpov.Swedbank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F89AEB20EF6E9400661E8E /* Build configuration list for PBXProject "Swedbank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F89B0320EF6E9800661E8E /* Debug */,
+				04F89B0420EF6E9800661E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F89B0520EF6E9800661E8E /* Build configuration list for PBXNativeTarget "Swedbank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F89B0620EF6E9800661E8E /* Debug */,
+				04F89B0720EF6E9800661E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04F89AFA20EF6E9500661E8E /* Swedbank.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04F89AFB20EF6E9500661E8E /* TSB.xcdatamodel */,
+			);
+			currentVersion = 04F89AFB20EF6E9500661E8E /* TSB.xcdatamodel */;
+			path = Swedbank.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04F89AE820EF6E9400661E8E /* Project object */;
+}
